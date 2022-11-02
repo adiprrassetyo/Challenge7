@@ -1,0 +1,400 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica", sans-serif;
+}
+
+body {
+  overflow: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 36px;
+  color: #000;
+  font-weight: 700;
+  line-height: 54px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+h4 {
+  font-size: 14px;
+  font-weight: bold;
+  font-weight: 700;
+  line-height: 20px;
+  color: #000;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  color: #000;
+}
+
+header {
+  background-color: #f1f3ff;
+  margin-bottom: 100px;
+}
+
+nav {
+  background-color: #f1f3ff;
+}
+
+section {
+  scroll-margin-top: 120px;
+}
+
+.col {
+  padding: 0;
+}
+
+.scroll {
+  background-color: white;
+}
+
+/* Start Navbar */
+.nav-link {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+.nav-link:hover {
+  color: #0d28a6;
+}
+
+.navbar-collapse {
+  align-items: flex-end;
+}
+
+.btn {
+  border: none;
+  background-color: #5cb85f;
+  color: #fff;
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.btn.selected {
+  background-color: #42a045;
+  color: white;
+}
+
+.btn:hover {
+  background-color: #42a045;
+  color: white;
+}
+/* End Navbar */
+
+/* Start Jumbotron */
+.jumbotron {
+  padding-top: 80px;
+}
+
+.jumbotron .row {
+  display: flex;
+  align-items: center;
+}
+
+.jumbotron-text {
+  margin-left: 100px;
+}
+.jumbotron-text h1 {
+  font-size: 36px;
+}
+.jumbotron-text p {
+  font-size: 14px;
+}
+/* End Jumbotron */
+
+/* Margin Setiap Section */
+#our-service-section {
+  margin-bottom: 100px;
+}
+#why-section {
+  margin-bottom: 100px;
+}
+#banner-section {
+  margin-bottom: 100px;
+}
+#testimony-section {
+  margin-bottom: 100px;
+  height: 484px;
+}
+#faq-section {
+  margin-bottom: 100px;
+}
+footer {
+  margin-bottom: 60px;
+}
+
+/* carousel styling */
+
+.carousel-image {
+  width: 80px;
+  height: 80px;
+}
+
+.carouse-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #f1f3ff;
+
+  padding: 3rem;
+  margin: 0 16px;
+
+  max-width: 600px;
+  border-radius: 8px;
+}
+
+.carousel-container {
+  padding-bottom: 5rem;
+}
+
+.rating-stars {
+  margin-bottom: 1rem;
+}
+/* carousel buttons */
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: url("../assets/images/left\ arrow.svg") !important;
+  font-size: 24px !important;
+  line-height: 0 !important;
+  transform: translateX(-1px) !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  z-index: 15;
+  top: 200 !important;
+  bottom: 0 !important;
+  border: 1px solid #c4c4c4 !important;
+  width: 32px !important;
+  height: 32px !important;
+  border-radius: 50% !important;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-button-prev {
+  left: auto !important;
+  right: 50% !important;
+  margin: 0 1rem;
+}
+
+.swiper-button-next {
+  left: 50% !important;
+  right: auto !important;
+  margin: 0 1rem;
+  transform: rotate(180deg);
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: #5cb85f;
+  border: none !important;
+  transition: all 0.5s ease-out;
+}
+
+.swiper-button-next:hover::after,
+.swiper-button-prev:hover::after {
+  content: url("../assets/images/left arrow white.svg") !important;
+}
+/* End Carousel */
+
+.cars-box-search {
+  width: 80%;
+  margin-top: -55px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 3px 2px #ebebeb;
+  font-size: 12px;
+  background-color: white;
+  z-index: 1;
+  position: relative;
+}
+
+/* Banner */
+.cta-banner {
+  text-align: center;
+  color: #fff;
+  background-color: #0d28a6;
+  border-radius: 13px;
+  padding: 64px 100px;
+  height: 326px;
+}
+
+/* Footer */
+
+.footer {
+  background-color: #f1f3ff;
+}
+
+.navigation li {
+  list-style: none;
+}
+
+.navigation li a {
+  text-decoration: none;
+  color: #000;
+  gap: 20px;
+}
+
+.navigation a:hover {
+  font-weight: 700;
+  transition: 0.5s;
+}
+
+.sosmed-icon {
+  margin-right: 16px;
+  size: 10px;
+}
+
+.accordion-item {
+  margin-bottom: 16px;
+}
+
+.link-footer:hover {
+  color: #0d28a6;
+  text-decoration: double;
+}
+/* End Footer */
+
+/* Responsif */
+@media screen and (max-width: 768px) {
+  .buton {
+    align-items: flex-start;
+  }
+
+  .jumbotron-text {
+    width: fit-content;
+  }
+  #jumbo {
+    margin-left: 1em;
+  }
+  .navbar-collapse {
+    align-items: flex-start;
+  }
+
+  .navbar-collapse ul {
+    margin-left: 1rem;
+  }
+
+  .offcanvas {
+    max-width: 50%;
+  }
+
+  #service-img {
+    padding-bottom: 2em;
+    max-width: 80%;
+  }
+
+  .jumbotron-text {
+    margin-left: 0;
+  }
+  .jumbotron-text p {
+    text-align-last: left;
+  }
+  .img-rental {
+    width: 400px;
+    margin-bottom: 24px;
+    margin-left: 20px;
+  }
+
+  .title-why-us {
+    text-align: center;
+  }
+  .card-why-us {
+    margin-bottom: 16px;
+  }
+
+  .carousel-card {
+    flex-direction: column;
+  }
+
+  .carousel-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 !important;
+  }
+
+  .carousel-image {
+    margin: 1rem;
+  }
+
+  .carousel-container {
+    padding-bottom: 7rem;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .carousel-button {
+    position: absolute;
+    z-index: 10;
+    top: 445px;
+  }
+
+  .cta-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    gap: 32px;
+    width: 328px;
+    height: 400px;
+  }
+
+  .navigation {
+    align-items: flex-start;
+    margin: 1rem 0 !important;
+    gap: 0px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .navbar-collapse ul {
+    margin-left: 1rem;
+  }
+
+  .navbar-collapse {
+    align-items: flex-start;
+  }
+
+  .jumbotron-img {
+    max-width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}

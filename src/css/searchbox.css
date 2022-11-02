@@ -1,0 +1,307 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica", sans-serif;
+}
+
+body {
+  overflow: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 36px;
+  color: #000;
+  font-weight: 700;
+  line-height: 54px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+h4 {
+  font-size: 14px;
+  font-weight: bold;
+  font-weight: 700;
+  line-height: 20px;
+  color: #000;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  color: #000;
+}
+
+header {
+  background-color: #f1f3ff;
+}
+
+section {
+  scroll-margin-top: 100px;
+}
+
+.col {
+  padding: 0;
+}
+
+.scroll {
+  background-color: white;
+}
+
+/* Start Navbar */
+.nav-link {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+.nav-link:hover {
+  color: #0d28a6;
+}
+
+.navbar-collapse {
+  align-items: flex-end;
+}
+
+.btn {
+  border: none;
+  background-color: #5cb85f;
+  color: #fff;
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.btn.selected {
+  background-color: #42a045;
+  color: white;
+}
+
+.btn:hover {
+  background-color: #42a045;
+  color: white;
+}
+/* End Navbar */
+
+/* Start Jumbotron */
+.jumbotron {
+  padding-top: 80px;
+}
+
+.jumbotron .row {
+  display: flex;
+  align-items: center;
+}
+
+.jumbotron-text {
+  margin-left: 100px;
+}
+.jumbotron-text h1 {
+  font-size: 36px;
+}
+.jumbotron-text p {
+  font-size: 14px;
+}
+/* End Jumbotron */
+
+/* start Search */
+.search-box {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  margin-bottom: 100px;
+}
+.search-content {
+  z-index: 100;
+  width: 73%;
+  padding: 24px;
+  height: fit-content;
+  background: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  margin-top: -50px;
+  /* top: 60%; */
+}
+
+.input-group {
+  width: 21%;
+}
+
+.input-group > .form-control,
+.input-group > .form-select {
+  border-radius: 3px !important;
+  position: relative;
+  flex: 1 1 auto;
+  width: 100%;
+  min-width: 0;
+
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
+  color: #3c3c3c;
+}
+
+.item {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.form-control:hover,
+.form-control:focus,
+.form-select:hover,
+.form-select:focus {
+  border: 1px solid #5cb85f;
+  box-shadow: none;
+}
+
+/* .show {
+  display: block;
+} */
+.button-search {
+  width: 13%;
+  background: #5cb85f;
+  border-radius: 3px;
+  border-style: none;
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  height: 6vh;
+  align-self: end;
+}
+
+.result-container {
+  text-align: -webkit-center;
+}
+.result {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  padding-top: 1%;
+  padding-right: 3%;
+  padding-left: 3%;
+  justify-content: space-around;
+  flex-flow: wrap;
+  text-align: left;
+  color: black;
+}
+
+/* end search */
+
+/* Footer */
+
+.footer {
+  background-color: #f1f3ff;
+}
+
+.navigation li {
+  list-style: none;
+}
+
+.navigation li a {
+  text-decoration: none;
+  color: #000;
+  gap: 20px;
+}
+
+.navigation a:hover {
+  font-weight: 700;
+  transition: 0.5s;
+}
+
+.sosmed-icon {
+  margin-right: 16px;
+  size: 10px;
+}
+
+.accordion-item {
+  margin-bottom: 16px;
+}
+
+.link-footer:hover {
+  color: #0d28a6;
+  text-decoration: double;
+}
+/* End Footer */
+
+/* Responsif */
+@media screen and (max-width: 768px) {
+  .buton {
+    align-items: flex-start;
+  }
+
+  .jumbotron-text {
+    width: fit-content;
+  }
+  #jumbo {
+    margin-left: 1em;
+  }
+  .navbar-collapse {
+    align-items: flex-start;
+  }
+
+  .navbar-collapse ul {
+    margin-left: 1rem;
+  }
+
+  .offcanvas {
+    max-width: 50%;
+  }
+
+  #service-img {
+    padding-bottom: 2em;
+    max-width: 80%;
+  }
+
+  .jumbotron-text {
+    margin-left: 0;
+  }
+  .jumbotron-text p {
+    text-align-last: left;
+  }
+  .img-rental {
+    width: 400px;
+    margin-bottom: 24px;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .navbar-collapse ul {
+    margin-left: 1rem;
+  }
+
+  .navbar-collapse {
+    align-items: flex-start;
+  }
+
+  .jumbotron-img {
+    max-width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}
