@@ -18,7 +18,7 @@ function Footer() {
                   <a href="#our-service-section"> Our services</a>
                 </li>
                 <li className="pb-md-2 ps-md-4">
-                  <a href="#why-us-section">Why Us </a>
+                  <a href="#why-section">Why Us </a>
                 </li>
                 <li className="pb-md-2 ps-md-4">
                   <a href="#testimony-section">Testimonial </a>

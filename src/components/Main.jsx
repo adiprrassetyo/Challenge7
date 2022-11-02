@@ -188,7 +188,7 @@ function Main() {
         {/*End why-us-section*/}
         {/*Start Testimonial-Section*/}
         <section id="testimony-section">
-          <div className="container-fluid" style={{ height: "460px" }}>
+          <div className="container-fluid" style={{ height: "430px" }}>
             <div className="row">
               <div
                 className="testimonial-header text-center"
@@ -201,7 +201,10 @@ function Main() {
                 </p>
               </div>
             </div>
-            <div className="row" style={{ height: "370px" }}>
+            <div
+              className="row"
+              style={{ height: "370px", paddingBottom: "100px" }}
+            >
               <div className="carouse-content">
                 <Swiper
                   modules={[Navigation]}

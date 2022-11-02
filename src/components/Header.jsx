@@ -7,7 +7,7 @@ function Header() {
         {/* Start navbar */}
         <nav id="navbar" className="navbar navbar-expand-lg fixed-top data ">
           <div className="container">
-            <a className="navbar-brand ms-0" href="#">
+            <a className="navbar-brand ms-0" href="/">
               <img src="./src/assets/images/logo.png" alt="logo" />
             </a>
             <button
@@ -92,7 +92,7 @@ function Header() {
                   kualitas <br /> terbaik dengan harga terjangkau. Selalu siap
                   melayani kebutuhanmu <br /> untuk sewa mobil selama 24 jam.
                 </p>
-                <a href="./cars.html">
+                <a href="/cars">
                   <button className="btn btn-success fw-bold">
                     Mulai Sewa Mobil
                   </button>
