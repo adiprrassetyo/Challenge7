@@ -8,6 +8,7 @@ body {
   overflow: hidden;
   overflow-y: scroll;
   scroll-behavior: smooth;
+  font-family: "Helvetica", sans-serif;
 }
 
 h1 {
@@ -46,7 +47,6 @@ p {
 
 header {
   background-color: #f1f3ff;
-  margin-bottom: 100px;
 }
 
 nav {
@@ -128,6 +128,7 @@ section {
 
 /* Margin Setiap Section */
 #our-service-section {
+  margin-top: 100px;
   margin-bottom: 100px;
 }
 #why-section {
