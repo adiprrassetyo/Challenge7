@@ -34,7 +34,6 @@ function SearchCar() {
       currency: "IDR",
     }).format(number);
   }
-
   // random int
   const getRandomInt = (min, max) => {
     min = Math.ceil(min);
@@ -146,6 +145,7 @@ function SearchCar() {
                 </div>
               ) : (
                 carFiltered.map((car) => {
+                  const rentCost = rupiah(car.rentPerDay);
                   return (
                     <div className="col-lg-4 col-md-4 col-sm-12" key={car.id}>
                       <div
@@ -169,7 +169,7 @@ function SearchCar() {
                           <p className="card-title">
                             {car.manufacture} {car.model}
                           </p>
-                          <p className="fw-bold">{car.rentPerDay}/ hari</p>
+                          <p className="fw-bold">{rentCost}/ hari</p>
                           <p className="card-text" style={{ height: "90px" }}>
                             {car.description}
                           </p>
